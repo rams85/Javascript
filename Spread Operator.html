@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>7. Spread Operator</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(to top left, #28b487, #7dd56f);
+      }
+      h1 {
+        font-family: sans-serif;
+        font-size: 50px;
+        line-height: 1.3;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Fundamentals – Part 1</h1>
+    <!-- <script src="script.js"></script> -->
+    <script type="text/javascript">
+    console.log('---------------------------------------');
+    console.log('7. Spread Operator');
+    console.log('---------------------------------------');
+
+    const arr1 = [1,5,7,2,6,2];
+
+    console.log(arr1);
+    // console.log(...arr1);
+
+    const [a,b,...others] = arr1;
+
+    console.log(a);
+    console.log(b);
+    console.log(others);
+
+    const arr2 = [2,5,2,5];
+
+    const arr3 = [...arr2, ...arr1];
+
+    console.log(arr3);
+
+    const arr5 = [4,2,5,2,...[9,20,3]];
+
+    console.log(arr5);
+    </script>
+  </body>
+</html>
